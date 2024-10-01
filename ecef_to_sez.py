@@ -105,9 +105,9 @@ for i in range(3):
     for j in range(3):
         rotationcalc_2[i]+=rotation_1[i][j]*rotationcalc_1[j]
 
-ecef_x_km=rotationcalc_2[0]
-ecef_y_km=rotationcalc_2[1]
-ecef_z_km=rotationcalc_2[2]
-print(ecef_x_km)
-print(ecef_y_km)
-print(ecef_z_km)
+s_km=rotationcalc_2[0]
+e_km=rotationcalc_2[1]
+z_km=rotationcalc_2[2]
+print(s_km)
+print(e_km)
+print(z_km)
