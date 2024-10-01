@@ -90,8 +90,7 @@ ecef_vect=[]
 
 for i,j in zip(o_ecef,ecef):
     ecef_vect.append(j - i)
-print(ecef_vect)
-print(ecef_llh)
+
 rotation_1=[[math.sin(lat_rad), 0, -math.cos(lat_rad)],[0, 1, 0],[math.cos(lat_rad),0,math.sin(lat_rad)]]
 rotation_2=[[math.cos(lon_rad),math.sin(lon_rad),0],[-math.sin(lon_rad),math.cos(lon_rad),0],[0,0,1]]
 
